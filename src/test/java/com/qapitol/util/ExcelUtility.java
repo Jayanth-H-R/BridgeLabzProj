@@ -18,7 +18,9 @@ public class ExcelUtility {
        Workbook workBook=WorkbookFactory.create(fis);
         Sheet sheet=workBook.getSheet("Sheet1");
         int rows=sheet.getPhysicalNumberOfRows();
+        System.out.println(rows);
         int lastCell= sheet.getRow(0).getLastCellNum();
+        System.out.println(lastCell);
 
         Object [][] obj=new Object[rows][lastCell];
 
@@ -26,13 +28,14 @@ public class ExcelUtility {
             for (int j = 0; j < lastCell; j++) {
                 CellType cellTyp = sheet.getRow(i).getCell(j).getCellType();
                 //System.out.println(cellTyp);
-
-                if (cellTyp.toString().equalsIgnoreCase("String")) {
-                    obj[i - 1][j] = sheet.getRow(i).getCell(j).getStringCellValue();
-                    System.out.println(sheet.getRow(i).getCell(j).getStringCellValue());
-                } else if (cellTyp.toString().equalsIgnoreCase("NUMERIC")) {
-                    obj[i - 1][j] = sheet.getRow(i).getCell(j).getNumericCellValue();
-                    System.out.println(sheet.getRow(i).getCell(j).getNumericCellValue());
+                if (cellTyp != null) {
+                    if (cellTyp.toString().equalsIgnoreCase("String")) {
+                        obj[i - 1][j] = sheet.getRow(i).getCell(j).getStringCellValue();
+                        System.out.println(sheet.getRow(i).getCell(j).getStringCellValue());
+                    } else if (cellTyp.toString().equalsIgnoreCase("NUMERIC")) {
+                        obj[i - 1][j] = sheet.getRow(i).getCell(j).getNumericCellValue();
+                        System.out.println(sheet.getRow(i).getCell(j).getNumericCellValue());
+                    }
                 }
             }
         }
