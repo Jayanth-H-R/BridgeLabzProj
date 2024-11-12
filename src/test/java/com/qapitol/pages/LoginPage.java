@@ -33,6 +33,13 @@ public void forms() throws InterruptedException {
      actions.moveToElement(elements).pause(2000).click().build().perform();
 
  }
+ public void alerts(){
+     Actions actions=new Actions(driver);
+     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+     actions.scrollByAmount(0,250);
+    WebElement alertsTab=driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']//ancestor::div[@class='card mt-4 top-card']"));
+     actions.moveToElement(alertsTab).click().pause(2000).perform();
+ }
 
 
 
