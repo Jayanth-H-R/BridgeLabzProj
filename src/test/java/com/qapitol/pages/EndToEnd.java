@@ -66,22 +66,25 @@ public class EndToEnd extends BaseClass {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//div[contains(@class,'datepicker__day--020')]")).click();
         Thread.sleep(2000);
+        js.executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@id='uploadPicture']")));
 
-        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//input[@id='uploadPicture']"))));
-        Thread.sleep(2000);
         // Copy the file path to the system clipboard
-        StringSelection path=new StringSelection("/.src/test/resources/Book.xlsx");
-        Toolkit toolkit=Toolkit.getDefaultToolkit();
-        Clipboard clipBoard=toolkit.getSystemClipboard();
-        clipBoard.setContents(path,null);
-        // simulate the key events to handle file upload pop-up
+
         Robot robot=new Robot();
+        robot.delay(2000);
+        StringSelection ss = new StringSelection("C:\\Users\\Qapitol QA\\Downloads\\Book.xlsx");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss,null);
+
+        // simulate the key events to handle file upload pop-up
+
         robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_V);
-        robot.keyRelease(KeyEvent.VK_V);
         robot.keyRelease(KeyEvent.VK_CONTROL);
+        robot.keyRelease(KeyEvent.VK_V);
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
         Thread.sleep(3000);
+       actions.scrollToElement( driver.findElement(By.xpath("//button[@id='submit']"))).click().perform();
+       Thread.sleep(2000);
   }
 }

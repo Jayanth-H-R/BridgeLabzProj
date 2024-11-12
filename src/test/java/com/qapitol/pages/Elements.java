@@ -36,7 +36,7 @@ public class Elements  extends BaseClass {
         Thread.sleep(3000);
         actions.moveToElement(chooseFile).pause(2000).click().build().perform();
         // Copy the file path to the system clipboard
-        StringSelection path=new StringSelection("/.src/test/resources/Book.xlsx");
+        StringSelection path=new StringSelection("C:\\Users\\Qapitol QA\\Downloads\\Book.xlsx");
         Toolkit toolkit=Toolkit.getDefaultToolkit();
         Clipboard clipBoard=toolkit.getSystemClipboard();
         clipBoard.setContents(path,null);
