@@ -6,6 +6,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
@@ -19,6 +21,7 @@ public class HandlingAlerts extends BaseClass {
 
     public void alertsInteraction() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+        WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(8));
         Actions actions=new Actions(driver);
         driver.findElement(By.xpath("//div[text()='Alerts, Frame & Windows']")).click();
             Thread.sleep(2000);
@@ -27,11 +30,14 @@ public class HandlingAlerts extends BaseClass {
         actions.moveToElement(alertOpt).pause(2000).click().build().perform(); */
         WebElement alert1=driver.findElement(By.id("alertButton"));
         JavascriptExecutor js=(JavascriptExecutor)driver;
-        js.executeScript("window.scrollTo(0,60)");
-        actions.scrollToElement(alert1).pause(2000).click().build().perform();
+        js.executeScript("arguments[0].click();",alert1);
         Thread.sleep(2000);
         driver.switchTo().alert().accept();
-
+        js.executeScript("arguments[0].click();",driver.findElement(By.id("timerAlertButton")));
+        wait.until(ExpectedConditions.alertIsPresent()).accept();
+        js.executeScript("arguments[0].click();",driver.findElement(By.id("confirmButton")));
+        wait.until(ExpectedConditions.alertIsPresent()).accept();
+        Thread.sleep(3000);
     }
 
 }

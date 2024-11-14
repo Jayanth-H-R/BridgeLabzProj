@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods" thread-count="">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Qapitol QA/IdeaProjects/DemoSession/src/test/java/com/qapitol/testcases/GridExecution1.java">
+        <classes>
+            <class name="com.qapitol.testcases.GridExecution1">
+                <methods>
+                    <include name="Test1"/>
+                    <include name="Test2"/>
+                    <include name="Test3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
