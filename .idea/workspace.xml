@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1716ea8f-0e0c-41d3-833a-e5126b9a2723" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase/MyntraTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase/MyntraTestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/generic/utility/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/generic/utility/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/generic/utility/WebDriverUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/generic/utility/WebDriverUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myntra/pages/MenTshirtsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myntra/pages/MenTshirtsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myntra/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myntra/pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/CommonData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/CommonData.properties" afterDir="false" />
-    </list>
+    <list default="true" id="1716ea8f-0e0c-41d3-833a-e5126b9a2723" name="Changes" comment="&quot;Mobile V2&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +163,27 @@
       <option name="presentableId" value="Default" />
       <updated>1732018114679</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;Mobile V2&quot;">
+      <option name="closed" value="true" />
+      <created>1732677134013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732677134013</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;Mobile V2&quot;">
+      <option name="closed" value="true" />
+      <created>1732677162363</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732677162363</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Mobile V2&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Mobile V2&quot;" />
   </component>
 </project>
