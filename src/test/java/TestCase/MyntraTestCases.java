@@ -1,5 +1,6 @@
 package TestCase;
 
+import com.aventstack.extentreports.ExtentTest;
 import com.myntra.pages.*;
 import com.generic.utility.BaseClass;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,6 +16,7 @@ public class MyntraTestCases extends BaseClass {
     @BeforeMethod
     public void configBefore() throws IOException {
         setUp();
+
     }
 
     @Test
@@ -25,11 +27,12 @@ public class MyntraTestCases extends BaseClass {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
         Thread.sleep(3000);
+
         try {
-            if (lPage.pushNotificationPopup.isDisplayed()) {
+           /* if (lPage.pushNotificationPopup.isDisplayed()) {
                 lPage.pushNotificationPopup.click();
-            }
-            Thread.sleep(3000);
+            } */
+            Thread.sleep(1000);
             // homePage.loginButton.click();
             lPage.myntraStoreBanner.click();
             wait.until(ExpectedConditions.elementToBeClickable(homePage.profileIcon)).click();
@@ -38,6 +41,7 @@ public class MyntraTestCases extends BaseClass {
             //wait.until(ExpectedConditions.elementToBeClickable(homePage.loginButton)).click();
             profile.continueButton.click();
             Thread.sleep(3000);
+
 
 
         } catch (Exception e) {
@@ -57,18 +61,21 @@ public class MyntraTestCases extends BaseClass {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
         Thread.sleep(3000);
+        ExtentTest test = extent.createTest("Login to Application").assignAuthor("Jayanth")
+                .assignCategory("Automation Test").assignDevice("Window");
+        test.info("Validating adding item to cart ");
         try {
-            if (lPage.pushNotificationPopup.isDisplayed()) {
+           if (lPage.pushNotificationPopup.isDisplayed()) {
                 lPage.pushNotificationPopup.click();
             }
-            Thread.sleep(3000);
-            // homePage.loginButton.click();
+            Thread.sleep(1000);
+
             lPage.myntraStoreBanner.click();
-            //wait.until((ExpectedConditions.elementToBeClickable(homePage.menTshirts))).click();
             homePage.menTshirts.click();
             MenTshirtsPage tshirtsPage = new MenTshirtsPage(driver);
+            //wait.until(ExpectedConditions.elementToBeClickable(tshirtsPage.roundNeckT)).click();
+            Thread.sleep(2000);
             tshirtsPage.roundNeckT.click();
-            //tshirtsPage.searchIcon.click();
             //wait.until(ExpectedConditions.elementToBeClickable(tshirtsPage.searchFeild)).click();
             tshirtsPage.mastAndHarbourTee.click();
             ProductPage productPage = new ProductPage(driver);
@@ -80,6 +87,8 @@ public class MyntraTestCases extends BaseClass {
             wait.until(ExpectedConditions.elementToBeClickable(productPage.bagIcon)).click();
             Boolean result = wait.until(ExpectedConditions.attributeToBe(productPage.itemsList, "text", "1/1 ITEMS SELECTED"));
             Assert.assertTrue(result, "Item not added");
+            log.info("item adding validation done....");
+            test.info("Executed adding item to cart test");
 
 
         } catch (Exception e) {
@@ -89,7 +98,7 @@ public class MyntraTestCases extends BaseClass {
 
     @AfterMethod
     public void configAfter() {
-
+        extent.flush();
         tearDown();
     }
 }

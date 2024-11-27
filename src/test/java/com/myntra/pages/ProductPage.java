@@ -11,7 +11,7 @@ public class ProductPage {
 
     public AppiumDriver driver;
 
-    public ProductPage(AppiumDriver driver){
+     public ProductPage(AppiumDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
     }

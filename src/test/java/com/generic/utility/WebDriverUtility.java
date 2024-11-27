@@ -18,4 +18,6 @@ public class WebDriverUtility {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
 
     }
+
+
 }

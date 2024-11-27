@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1716ea8f-0e0c-41d3-833a-e5126b9a2723" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase/MyntraTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase/MyntraTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/generic/utility/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/generic/utility/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/generic/utility/WebDriverUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/generic/utility/WebDriverUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/myntra/pages/MenTshirtsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myntra/pages/MenTshirtsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/myntra/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myntra/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/CommonData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/CommonData.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -48,10 +52,18 @@
     &quot;TestNG.FlipkartTestCases.loginTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.MyntraTestCases.addingCart.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.MyntraTestCases.loginTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;TestNG.MyntraTestConfig.loginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MyntraTestConfig.screenShotTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;mobileAutomation&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Qapitol QA/IdeaProjects/MobileCalci/src/test/resources/ApkFiles&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Qapitol QA\IdeaProjects\MobileCalci\src\test\resources\ApkFiles" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.MyntraTestCases.addingCart">
     <configuration name="Calci" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MobileAuto" />
@@ -123,10 +135,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyntraTestConfig.screenShotTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MobileAuto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestCase" />
+      <option name="MAIN_CLASS_NAME" value="TestCase.MyntraTestConfig" />
+      <option name="METHOD_NAME" value="screenShotTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MyntraTestCases.addingCart" />
         <item itemvalue="TestNG.MyntraTestCases.loginTest" />
+        <item itemvalue="TestNG.MyntraTestConfig.screenShotTest" />
         <item itemvalue="TestNG.MyntraTestCases" />
         <item itemvalue="TestNG.Calci" />
       </list>
