@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="customclasses.ExtentReportManager"></listener>
+    </listeners>
+
+    <test thread-count="2" name="End to End Test">
+        <classes>
+            <class name="com.demoguru99.tests.ChooseFileTest"/>
+
+            <class name="com.demoguru99.tests.DeleteCustomerTest"/>
+
+            <class name="com.demoguru99.tests.LoginTest"/>
+
+            <class name="com.demoguru99.tests.MovieDemoTest"/>
+
+            <class name="com.demoguru99.tests.RadioAndCheckTest"/>
+
+            <class name="com.demoguru99.tests.ToolTipTest"/>
+
+            <class name="com.demoguru99.tests.UploadFileTest"/>
+
+        </classes>
+    </test>
+</suite>
