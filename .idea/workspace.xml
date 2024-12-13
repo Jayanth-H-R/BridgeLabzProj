@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1716ea8f-0e0c-41d3-833a-e5126b9a2723" name="Changes" comment="&quot;Mobile V2&quot;" />
+    <list default="true" id="1716ea8f-0e0c-41d3-833a-e5126b9a2723" name="Changes" comment="&quot;Mobile V2&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myntra.log" beforeDir="false" afterPath="$PROJECT_DIR$/myntra.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/generic/utility/WebDriverUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/generic/utility/WebDriverUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/CommonData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/CommonData.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,29 +39,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.Calci.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.FlipkartTestCases.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.FlipkartTestCases.loginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MyntraTestCases.addingCart.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MyntraTestCases.loginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MyntraTestConfig.loginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MyntraTestConfig.screenShotTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;mobileAutomation&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Qapitol QA/IdeaProjects/MobileCalci/src/test/resources/ApkFiles&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.Calci.executor": "Run",
+    "TestNG.FlipkartTestCases.executor": "Run",
+    "TestNG.FlipkartTestCases.loginTest.executor": "Run",
+    "TestNG.InstaPost.zoomIn.executor": "Run",
+    "TestNG.MyntraTestCases.addingCart.executor": "Run",
+    "TestNG.MyntraTestCases.loginTest.executor": "Run",
+    "TestNG.MyntraTestConfig.loginTest.executor": "Run",
+    "TestNG.MyntraTestConfig.screenShotTest.executor": "Run",
+    "git-widget-placeholder": "mobileAutomation",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Qapitol QA/IdeaProjects/MobileCalci/src/test/resources/ApkFiles"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Qapitol QA\IdeaProjects\MobileCalci\src\test\resources\ApkFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyntraTestCases.addingCart">
-    <configuration name="Calci" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.InstaPost.zoomIn">
+    <configuration name="InstaPost.zoomIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MobileAuto" />
       <extension name="coverage">
         <pattern>
@@ -65,8 +71,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestCase" />
-      <option name="MAIN_CLASS_NAME" value="TestCase.Calci" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="TestCase.InstaPost" />
+      <option name="METHOD_NAME" value="zoomIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -146,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.InstaPost.zoomIn" />
         <item itemvalue="TestNG.MyntraTestCases.addingCart" />
         <item itemvalue="TestNG.MyntraTestCases.loginTest" />
         <item itemvalue="TestNG.MyntraTestConfig.screenShotTest" />
         <item itemvalue="TestNG.MyntraTestCases" />
-        <item itemvalue="TestNG.Calci" />
       </list>
     </recent_temporary>
   </component>
