@@ -22,7 +22,7 @@ public class ExcelUtility {
         int lastCell= sheet.getRow(0).getLastCellNum();
         System.out.println(lastCell);
 
-        Object [][] obj=new Object[rows][lastCell];
+        Object [][] obj=new Object[rows-1][lastCell];
 
         for(int i=1; i<rows;i++) {
             for (int j = 0; j < lastCell; j++) {
